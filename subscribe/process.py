@@ -485,7 +485,7 @@ def assign(
                 continue
 
             # get the first conversion configuration for each group
-            push_conf = pc.storage.get("items", {}).get(targets.values()[0], {})
+            push_conf = pc.storage.get("items", {}).get(list(targets.values())[0], {})
             subscribe = pushtool.raw_url(push_conf=push_conf)
             if k not in groups or not subscribe:
                 continue
