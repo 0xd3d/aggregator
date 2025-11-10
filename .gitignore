@@ -134,3 +134,8 @@ config.yaml
 generate.ini
 subscribe/config/config.json
 config.local.json
+
+# Output files
+output/
+crawler.log
+*.log

@@ -1,0 +1,84 @@
+{
+  "domains": [],
+  "crawl": {
+    "enable": true,
+    "exclude": "",
+    "threshold": 3,
+    "singlelink": true,
+    "persist": {
+      "subs": "crawledsubs",
+      "proxies": "crawledproxies"
+    },
+    "config": {
+      "rename": "",
+      "include": "",
+      "exclude": ""
+    },
+    "telegram": {
+      "enable": false,
+      "pages": 2,
+      "exclude": "",
+      "users": {}
+    },
+    "google": {
+      "enable": false,
+      "exclude": "",
+      "notinurl": [],
+      "push_to": []
+    },
+    "github": {
+      "enable": true,
+      "pages": 1,
+      "push_to": [],
+      "exclude": "",
+      "spams": []
+    },
+    "twitter": {
+      "enable": false,
+      "users": {}
+    },
+    "repositories": [],
+    "pages": [
+      {
+        "enable": true,
+        "url": "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt",
+        "include": "",
+        "exclude": "",
+        "config": {
+          "rename": "",
+          "liveness": true
+        },
+        "push_to": []
+      }
+    ],
+    "scripts": []
+  },
+  "groups": {
+    "demo": {
+      "emoji": true,
+      "list": false,
+      "targets": {
+        "clash": "demo-clash"
+      },
+      "regularize": {
+        "enable": false,
+        "locate": true,
+        "bits": 2
+      }
+    }
+  },
+  "storage": {
+    "engine": "local",
+    "items": {
+      "demo-clash": {
+        "fileid": "demo-clash.yaml"
+      },
+      "crawledsubs": {
+        "fileid": "crawled-subs.txt"
+      },
+      "crawledproxies": {
+        "fileid": "crawled-proxies.txt"
+      }
+    }
+  }
+}

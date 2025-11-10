@@ -14,6 +14,23 @@
 ## 使用方法
 > 略，自行探索。我才不会告诉你入口是 `collect.py` 和 `process.py`。**强烈建议使用后者，前者只是个小玩具**，配置参考 `subscribe/config/config.default.json`
 
+### 快速开始
+
+```bash
+# 查看启动脚本帮助
+./run.sh --help
+
+# 使用demo配置运行（测试）
+./run.sh --config subscribe/config/config.demo.json
+
+# 查看详细文档
+cat QUICK_START.md
+```
+
+详细使用说明请查看：
+- [快速开始指南](QUICK_START.md)
+- [详细运行指南](RUN_GUIDE.md)
+
 ## 免责申明
 + 本项目仅用作学习爬虫技术，请勿滥用，不要通过此工具做任何违法乱纪或有损国家利益之事
 + 禁止使用该项目进行任何盈利活动，对一切非法使用所产生的后果，本人概不负责
